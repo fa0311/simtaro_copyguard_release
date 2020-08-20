@@ -1,0 +1,3 @@
+$(function () {
+    $("#nocopy").children().unwrap();
+})

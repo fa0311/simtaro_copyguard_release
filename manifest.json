@@ -1,0 +1,18 @@
+{
+    "name": "simtaro_copyguard_release",
+    "description": "simtaro.comの記事をコピペできるようになります",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "https://simtaro.com/*"
+        ],
+        "js": [
+            "js/lib/jquery-3.4.1.min.js",
+            "js/main.js"
+        ]
+    }]
+}
